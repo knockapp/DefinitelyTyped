@@ -15,7 +15,7 @@ export function createReducer<I extends IndexedModelClasses, TAction extends any
     updater?: defaultUpdater<I, TAction>
 ): ORMReducer<I, TAction>;
 
-export type Selector<S, R> = (state: S) => R;
+export type Selector<S, R> = (state: S, ...args: any[]) => R;
 
 export interface ORMSelector<I extends IndexedModelClasses, Args extends any[], R> {
     (session: OrmSession<I>, ...args: Args): R;
