@@ -22,7 +22,6 @@ export interface ORMSelector<I extends IndexedModelClasses, Args extends any[], 
 }
 
 export function createSelector<S, I, R1, R2, R3, R4, R5, R6, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     selector2: Selector<S, R2>,
     selector3: Selector<S, R3>,
@@ -33,7 +32,6 @@ export function createSelector<S, I, R1, R2, R3, R4, R5, R6, R>(
 ): Selector<S, R>;
 
 export function createSelector<S, I, R1, R2, R3, R4, R5, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     selector2: Selector<S, R2>,
     selector3: Selector<S, R3>,
@@ -43,7 +41,6 @@ export function createSelector<S, I, R1, R2, R3, R4, R5, R>(
 ): Selector<S, R>;
 
 export function createSelector<S, I, R1, R2, R3, R4, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     selector2: Selector<S, R2>,
     selector3: Selector<S, R3>,
@@ -52,7 +49,6 @@ export function createSelector<S, I, R1, R2, R3, R4, R>(
 ): Selector<S, R>;
 
 export function createSelector<S, I, R1, R2, R3, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     selector2: Selector<S, R2>,
     selector3: Selector<S, R3>,
@@ -60,20 +56,17 @@ export function createSelector<S, I, R1, R2, R3, R>(
 ): Selector<S, R>;
 
 export function createSelector<S, I, R1, R2, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     selector2: Selector<S, R2>,
     ormSelector: ORMSelector<I, [R1, R2], R>
 ): Selector<S, R>;
 
 export function createSelector<S, I, R1, R>(
-    orm: ORM<I>,
     selector1: Selector<S, R1>,
     ormSelector: ORMSelector<I, [R1], R>
 ): Selector<S, R>;
 
 export function createSelector<S, I, R>(
-    orm: ORM<I>,
     ormSelector: ORMSelector<I, [], R>
 ): Selector<S, R>;
 
