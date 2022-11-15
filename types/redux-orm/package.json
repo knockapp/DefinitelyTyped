@@ -1,0 +1,25 @@
+{
+    "name": "@types/redux-orm",
+    "version": "0.16.1",
+    "description": "TypeScript definitions for redux-orm",
+    "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/redux-orm",
+    "license": "MIT",
+    "contributors": [
+        {
+            "name": "Tomasz Zabłocki",
+            "url": "https://github.com/tomasz-zablocki",
+            "githubUsername": "tomasz-zablocki"
+        }
+    ],
+    "main": "",
+    "types": "index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "directory": "types/redux-orm"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typesPublisherContentHash": "26f0d42d54916657a5c052955a2f7bacdf2c4eb66b7d2f343bb3e1b42d51a4ea",
+    "typeScriptVersion": "3.8"
+}
